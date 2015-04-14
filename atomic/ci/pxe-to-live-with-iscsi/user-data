@@ -1,6 +1,3 @@
-# Atomic Host boot option:
-# ds=nocloud-net;seedfrom=<URL to dir with user-data and meta-data>
-
 write_files:
   - path: /etc/sysconfig/docker-storage-setup
     permissions: 0644
