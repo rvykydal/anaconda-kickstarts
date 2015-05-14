@@ -13,9 +13,10 @@ part /boot --size=500 --fstype="ext4"
 
 shutdown
 
-# Including settings created during installer iso compose.
-# interactive-defaults.ks is overriden regular kickstart file like this.
-# It contains ostreesetup pointing to repo in iso, services enablement, ...
+# Including settings created during installer iso compose in
+# interactive-defaults.ks because they are overriden by regular kickstart file
+# like this.  It contains eg ostreesetup command pointing to repo in iso,
+# services enablement, ...
 %include /usr/share/anaconda/interactive-defaults.ks
 
 ostreesetup --nogpg --osname=rhel-atomic-host --remote=rhel-atomic-host --url=http://10.34.102.55:8000/ --ref=rhel-atomic-host/7/x86_64/standard

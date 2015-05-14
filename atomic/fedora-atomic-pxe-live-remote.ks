@@ -13,9 +13,10 @@ part /boot --size=500 --fstype="ext4"
 
 shutdown
 
-# Including settings created during installer iso compose.
-# interactive-defaults.ks is overriden regular kickstart file like this.
-# It contains ostreesetup pointing to repo in iso, services enablement, ...
+# Including settings created during installer iso compose in
+# interactive-defaults.ks because they are overriden by regular kickstart file
+# like this.  It contains eg ostreesetup command pointing to repo in iso,
+# services enablement, ...
 %include /usr/share/anaconda/interactive-defaults.ks
 
 services --disabled=docker-storage-setup
