@@ -24,7 +24,7 @@ Building live Atomic image
 sudo dnf install wget lorax libvirt virt-install qemu-kvm
 ```
 
-* Download Atomic **installer iso** which will be used to install live Atomic to raw disk image in a virtual machine. For now let's use Fedora 22 Test Candidate 3 (final released images should be available at https://getfedora.org/en/cloud/download/)
+* Download Atomic **installer iso** which will be used to install live Atomic to raw disk image in a virtual machine. For now let's use Fedora 22 Test Candidate 3 (final iso images for current Fedora release should be available at https://getfedora.org/en/cloud/download/)
 
 ```
 sudo wget http://alt.fedoraproject.org/pub/alt/stage/22_TC3/Cloud_Atomic/x86_64/iso/Fedora-Cloud_Atomic-x86_64-22_TC3.iso -O /var/lib/libvirt/images/atomic-installer.iso
