@@ -8,8 +8,5 @@ write_files:
 
 runcmd:
   - iscsiadm --mode discoverydb --type sendtargets --portal 10.34.102.54 --discover
-#  - iscsiadm -m node --loginall=automatic
   - iscsiadm -m node --targetname iqn.2009-02.com.example:part --portal 10.34.102.54:3260 --login
-  - docker-storage-setup
-  - systemctl restart docker.service
 

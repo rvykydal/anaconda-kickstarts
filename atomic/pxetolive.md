@@ -109,7 +109,7 @@ The snippet contains `ostreesetup` command pointing to the repository. To overri
 ostreesetup --nogpg --osname=fedora-atomic --remote=fedora-atomic --url=http://10.34.102.55:8000/ --ref=fedora-atomic/f22/x86_64/docker-host
 ```
 
-This way Atomic installer iso can be used to create live Atomic image with updated content. It is not possible to update live Atomic Host in the normal way with `atomic update` command, respin of the live image needs to be done. It is because (atomic) updates of system using ostree technology require rebooting into updated system (and allow for reboot or rollback to previous version of the system).
+This way Atomic installer iso can be used to create live Atomic image with updated content. It is not possible to update live Atomic Host in the normal way with `atomic host upgrade` command, respin of the live image needs to be done. It is because (atomic) updates of system using ostree technology require rebooting into updated system (and allow for reboot or rollback to previous version of the system).
 
 
 ### Building image with rpm-ostree-toolbox
